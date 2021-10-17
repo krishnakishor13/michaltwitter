@@ -5,6 +5,9 @@ So there are not user accounts and follow function. You can challenge after you 
 
 # Checkout [Live Demo](https://twitter-clone-krishnakishor.herokuapp.com)!
 
+![Screenshot](https://user-images.githubusercontent.com/91717723/137626943-c96d631f-afab-4fdf-a72e-2f872dd5a96b.png)
+
+
 # Tech used
 
 * Html
