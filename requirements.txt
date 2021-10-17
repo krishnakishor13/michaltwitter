@@ -1,3 +1,4 @@
+alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-clean @ file:///opt/concourse/worker/volumes/live/f737694e-9e17-4744-6eeb-ed38d767ec0b/volume/anaconda-clean_1614068811903/work
 anaconda-client==1.7.2
 anaconda-navigator==2.0.3
