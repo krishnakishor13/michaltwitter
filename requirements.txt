@@ -1,4 +1,3 @@
-alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-clean @ file:///opt/concourse/worker/volumes/live/f737694e-9e17-4744-6eeb-ed38d767ec0b/volume/anaconda-clean_1614068811903/work
 anaconda-client==1.7.2
 anaconda-navigator==2.0.3
@@ -261,4 +260,3 @@ zict==2.0.0
 zipp @ file:///tmp/build/80754af9/zipp_1615904174917/work
 zope.event==4.5.0
 zope.interface @ file:///opt/concourse/worker/volumes/live/2b8309a3-732c-445e-5670-ab75beb9637c/volume/zope.interface_1616357204515/work
-setuptools==0.7.3
