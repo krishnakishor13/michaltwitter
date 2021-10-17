@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %} {% load static %}
+<section class="content">
+  <section class="post_for">
+    <div class="mai">
+      <div class="main-header">
+        <img src="/static/img/twitter.png" class="logo" />
+        <h1>Edit Post</h1>
+      </div>
+    </div>
+    <form action="" method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      <input type="text" name="name" value="{{post.name}}" required />
+      <input
+        class="texted"
+        type="text"
+        name="body"
+        value="{{post.body}}"
+        required
+      />
+
+            <div class="pic">
+            <img src="{{ post.image.url }}" style="width: 400px; height: 400px;">       
+                <input type="file" name="image"></div>
+
+      <!--cancel and update-->
+
+      <button class="btn" type="submit">Cancel</button>
+      <input id="udatee" type="submit" value="Tweet"/>
+    </form>
+  </section>
+</section>
+{% endblock %}
