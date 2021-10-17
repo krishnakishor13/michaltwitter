@@ -5,7 +5,7 @@ So there are not user accounts and follow function. You can challenge after you 
 
 # Checkout [Live Demo](https://twitter-clone-krishnakishor.herokuapp.com)!
 
-#Tech used
+# Tech used
 
 * Html
 * Css
@@ -14,7 +14,7 @@ So there are not user accounts and follow function. You can challenge after you 
 * Django
 * Cloudinary (To host uploaded images on CDN)
 
-#User Story
+# User Story
 
 * Users can post tweets.
 * Users can edit tweets.
