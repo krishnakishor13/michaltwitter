@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os 
 
 import cloudinary
 import cloudinary.uploader
@@ -53,6 +54,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'django_forum.urls'
@@ -82,7 +84,11 @@ WSGI_APPLICATION = 'django_forum.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': "daprdr9sb8kset",
+        "USER" :"kgimjwxpgfyuwi",
+        "HOST" : "ec2-23-22-243-103.compute-1.amazonaws.com",
+        "PORT" : 5432,
+        "PASSWORD" :"cc030f69ce6138b4de6f0cee8a3c3766fabfaab4435bc73748b0d5448f634bbd",
     }
 }
 
@@ -128,7 +134,8 @@ STATIC_URL = '/static/'
 cloudinary.config(
     cloud_name = "techisio" ,
     api_key = "824343795361486" ,
-    api_secret = "4iouUyJUNyruEf9tFfjyJ7friaw"
+    api_secret = "4iouUyJUNyruEf9tFfjyJ7friaw",
+    secure = True,
 )
 
 
@@ -138,3 +145,5 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_URL = "/static/"
