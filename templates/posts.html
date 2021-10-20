@@ -46,8 +46,11 @@
      <div class="name">{{ post.name }}</div>
      <div class="datetime">{{ post.created_at  }}</div>
      <p>{{ post.body }}</p>
-    <div class="pic">
+    
+     <div class="pic">
+      {% if post.image.url %}
       <img src="{{ post.image.url }}" >
+      {% endif %}
     </div>
           
               
