@@ -3,8 +3,8 @@
   <section class="post_for">
     <div class="mai">
       <div class="main-header">
-        <img src="/static/img/twitter.png" class="logo" />
-        <h1>Edit Post</h1>
+        <img src="/static/img/world.png" class="logo" />
+        <h1>Edit Page</h1>
       </div>
     </div>
     <form action="" method="POST" enctype="multipart/form-data">
@@ -18,14 +18,18 @@
         required
       />
 
-            <div class="pic">
-            <img src="{{ post.image.url }}" style="max-width: 100%; max-height: 100%;">       
-                <input type="file" name="image"></div>
+      <div class="pic">
+        <img
+          src="{{ post.image.url }}"
+          style="max-width: 100%; max-height: 100%"
+        />
+        <input type="file" name="image" />
+      </div>
 
       <!--cancel and update-->
 
       <button class="btn" type="submit">Cancel</button>
-      <input id="udatee" type="submit" value="Tweet"/>
+      <input id="udatee" type="submit" value="Update" />
     </form>
   </section>
 </section>

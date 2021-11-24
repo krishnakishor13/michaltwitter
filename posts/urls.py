@@ -8,3 +8,4 @@ urlpatterns = [
     path('edit/<int:post_id>/',views.edit,name='edit'),
     path('like/<int:post_id>/' ,views.LikeView,name='like_post' ),
 ]
+

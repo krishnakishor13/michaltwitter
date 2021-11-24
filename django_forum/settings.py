@@ -131,12 +131,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 cloudinary.config(
-    cloud_name = "techisio" ,
-    api_key = "824343795361486" ,
-    api_secret = "4iouUyJUNyruEf9tFfjyJ7friaw",
-    secure = True,
+    cloud_name="dgn4efd3n",
+    api_key="898382786191378",
+    api_secret="NislY7AGktYzHMY0rGXRbXP5ja8"
 )
-
 
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
