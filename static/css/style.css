@@ -332,7 +332,8 @@ a.btn-gray {
 }
 
 .name_body .pic img {
-  width: 100%;
+  width: 370px;
+  height: 370px;
   border-radius: 7px;
 }
 
