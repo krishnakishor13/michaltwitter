@@ -35,7 +35,7 @@
                     <p>{{post.body}}</p>
 
                     <div class="pic">
-                        <img src="{{ post.image.url }}" style="max-width: 370px; max-height: 370px; border-radius: 15px;">  
+                        <img src="{{ post.image.url }}">  
                         
                         <form action="{% url 'like_post' post.pk %}" method="POST">
                             {% csrf_token %}

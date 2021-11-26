@@ -140,3 +140,30 @@ Post
 #update{
   border: 0;
 }
+
+.name_body .pic img {
+  max-width: 370px;
+  max-height: 370px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:422px) {
+  .name_body .pic img {
+    max-width: 260px;
+  }
+  
+}
+
+@media screen and (max-width:280px) {
+  .name_body .pic img {
+    max-width: 200px;
+  }
+
+  #tweet {
+    margin-top: 5px;
+    margin-left: 37px;
+    height: 36px;
+    padding: 3%;
+  }
+  
+}
