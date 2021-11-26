@@ -1,36 +1,26 @@
-{% extends "base.html" %} {% block content %} {% load static %}
+{% extends "base.html" %} {%block content %} {% load static %}
+
 <section class="content">
-  <section class="post_for">
-    <div class="mai">
-      <div class="main-header">
-        <img src="/static/img/world.png" class="logo" />
-        <h1>Edit Page</h1>
-      </div>
+    <div class="main-header">
+    <img src="/static/img/twitter.png" class="logo">
+    <h1>Edit</h1>
     </div>
-    <form action="" method="POST" enctype="multipart/form-data">
-      {% csrf_token %}
-      <input type="text" name="name" value="{{post.name}}" required />
-      <input
-        class="texted"
-        type="text"
-        name="body"
-        value="{{post.body}}"
-        required
-      />
-
-      <div class="pic">
-        <img
-          src="{{ post.image.url }}"
-          style="width: 370px; border-radius: 7px; height: 370px;"
-        />
-        <input type="file" name="image" />
-      </div>
-
-      <!--cancel and update-->
-
-      <button class="btn" type="submit">Cancel</button>
-      <input id="udatee" type="submit" value="Update" />
-    </form>
-  </section>
-</section>
-{% endblock %}
+    <section class="post_form">
+        <form action="" method="POST" enctype="multipart/form-data"> 
+            {% csrf_token %}
+            <input type="text" id="name" name="name" value="{{post.name}}" required />
+            <input name="body" id="body" value="{{post.body}}" required></input>
+            
+            <div class="pic">
+                <img src="{{ post.image.url }}" style="max-width: 370px; max-height: 370px; border-radius: 15px;">       
+                    <input type="file" name="image"></div>
+    
+          <!--cancel and update-->
+    
+          <button class="btn" id="cancel" type="submit">Cancel</button>
+          <button type="submit" id="tweet" value="Update">Update</button>
+         
+      
+        </form>
+    </section>
+    {% endblock %}
