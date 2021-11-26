@@ -110,18 +110,18 @@ Post
     font-size: 20px;
   }
 }
-#name{
+#name {
   border: 0;
   border-radius: 10px;
   background-color: #e6fef7;
 }
-#body{
+#body {
   border: 0;
 }
-.buttonarea{
+.buttonarea {
   display: flex;
 }
-#tweet{
+#tweet {
   margin-top: -1px;
   margin-left: 46px;
   padding: 19px;
@@ -130,14 +130,14 @@ Post
   background-color: dodgerblue;
   color: white;
 }
-#cancel{
+#cancel {
   border: 0;
   padding: 18px 23px;
   background-color: rgb(73, 73, 73);
   border-radius: 10px;
   color: #ccc;
 }
-#update{
+#update {
   border: 0;
 }
 
@@ -147,14 +147,13 @@ Post
   border-radius: 15px;
 }
 
-@media screen and (max-width:422px) {
+@media screen and (max-width: 422px) {
   .name_body .pic img {
     max-width: 260px;
   }
-  
 }
 
-@media screen and (max-width:280px) {
+@media screen and (max-width: 280px) {
   .name_body .pic img {
     max-width: 200px;
   }
@@ -165,5 +164,26 @@ Post
     height: 36px;
     padding: 3%;
   }
-  
+}
+
+.pic img {
+  max-width: 370px;
+  max-height: 370px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 422px) {
+  .pic img {
+    max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .pic img {
+    max-width: 200px;
+  }
+
+  #cancel {
+    padding: 11px 7px;
+  }
 }
